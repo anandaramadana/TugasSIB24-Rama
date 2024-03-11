@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Formulir</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">Formulir Pendaftaran</h1>
+        <form action="index.html" method="get">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="nama">Nama :</label> <br>
+                    <input type="text" placeholder="Nama Lengkap">
+                </div>
+
+                <div class="user-input-box">
+                    <label for="email">Email :</label> <br>
+                    <input type="text" placeholder="Email Aktif">
+                </div>
+                
+                <div class="user-input-box">
+                    <label for="nohp">No HP :</label> <br>
+                    <input type="text" placeholder="No HP Aktif">
+                </div>
+
+                <div class="user-input-box">
+                    <label for="prodi">Prodi :</label> <br>
+                    <select id="prodi" name="prodi">
+                      <option value="" disabled selected>Pilih Prodi</option>
+                      <option value="nilai1">Teknik Informatika</option>
+                      <option value="nilai2">Sistem Informasi</option>
+                    </select>
+                </div>        
+            </div>
+            
+            <div class="alamat-input-box">
+                <label for="alamat">Alamat :</label> <br>
+                <textarea name="alamat" id="" cols="30" rows="5" placeholder="Alamat Lengkap"></textarea>
+            </div>
+
+            <div class="hobi-input-box">
+                <label for="hobi">Hobi :</label> <br>
+                <div class="hobi-category">
+                    <input type="checkbox" name="membaca"> 
+                    <label for="hobi1">Membaca</label> 
+                    <input type="checkbox" name="menulis"> 
+                    <label for="hobi1">Menulis</label> 
+                    <input type="checkbox" name="menyanyi"> 
+                    <label for="hobi1">Menyanyi</label> 
+                    <input type="checkbox" name="olahraga"> 
+                    <label for="hobi1">Olahraga</label> 
+                </div>
+            </div>
+            
+            <div class="gender-user-info">
+                <span class="gender-title">Jenis Kelamin :</span>
+                <div class="gender-category">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Laki - Laki</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Perempuan</label>
+                </div>
+            </div>
+
+            <div class="foto-input-box">
+                <label for="foto">Foto Diri :</label> <br>
+                <input type="file">
+            </div>
+
+            <div class="form-submit-btn">
+                <input type="submit" value="Daftar">
+            </div>
+
+            <div class="form-cancel-btn">
+                <input type="submit" src="index.html" value="Kembali">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
