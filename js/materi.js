@@ -31,10 +31,6 @@ let doWhilee = document.getElementById('do-while');
 let breakk = document.getElementById('break');
 let continuee = document.getElementById('continue');
 
-statement.onclick = function(){
-    alert('halo');
-}
-
 vari.onclick = function() {
     var x = 10;
     if (true) {
