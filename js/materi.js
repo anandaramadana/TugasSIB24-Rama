@@ -1,4 +1,3 @@
-let statement = document.getElementById('statement');
 let vari = document.getElementById('var');
 let leti = document.getElementById('let');
 let jumlah = document.getElementById('penjumlahan');
