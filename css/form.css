@@ -195,6 +195,10 @@ body {
     margin-top: 10px;
 }
 
+.form-cancel-btn a {
+    text-decoration: none;
+}
+
 .form-cancel-btn input {
     display: block;
     width: 100%;
@@ -205,6 +209,7 @@ body {
     border-radius: 3px;
     color: rgb(209, 209, 209);
     background: rgba(114, 63, 76, 0.7);
+    cursor: pointer;
 }
 
 .form-cancel-btn input:hover {
