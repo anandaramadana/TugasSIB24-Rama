@@ -1,20 +1,25 @@
+let tugas = document.getElementById('tugas');
+    tugas.style.fontWeight = 'bold';
+    tugas.style.color = 'black';
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
+    next.innerHTML = '>'
 let prev = document.getElementById('prev');
+    prev.innerHTML = '<'
 let thumbnails = document.querySelectorAll('.thumbnail .item');
 
 let countItem = items.length;
 let itemActive = 0;
 
-next.onclick = function() {
+document.getElementById('next').addEventListener('click', function() {
     itemActive = itemActive + 1;
     if (itemActive >= countItem) {
         itemActive = 0;
     }
     showSlider();
-}
+});
 
-prev.onclick = function() {
+document.getElementById('prev').onclick = function() {
     itemActive = itemActive - 1;
     if (itemActive < 0) {
         itemActive = countItem - 1;
