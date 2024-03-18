@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/background.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.container .content .materi {
+    margin-bottom: 10px;
+}
+
+.container .content .materi label {
+    color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+.form-cancel-btn {
+    margin-top: 20px;
+}
+
+.form-cancel-btn a {
+    text-decoration: none;
+}
+
+.form-cancel-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(114, 63, 76, 0.7);
+    cursor: pointer;
+}
+
+.form-cancel-btn input:hover {
+    background: red;
+    color: white;
+}
