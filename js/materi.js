@@ -1,3 +1,4 @@
+let statement = document.getElementById('statement');
 let vari = document.getElementById('var');
 let leti = document.getElementById('let');
 let jumlah = document.getElementById('penjumlahan');
@@ -36,7 +37,7 @@ vari.onclick = function() {
         var x = 20;
         console.log("Nilai x di dalam blok :", x);
     }
-    console.log("Nilai x di luar blok :", x);
+    alert("Nilai x di luar blok : " + x);
 }
 
 leti.onclick = function() {
@@ -45,7 +46,7 @@ leti.onclick = function() {
         let y = 20;
         console.log("Nilai y di dalam blok :", y);
     }
-    console.log("Nilai y di luar blok :", y);
+    alert("Nilai y di luar blok : " + y);
 }
 
 jumlah.onclick = function() {
@@ -140,47 +141,47 @@ aritmatika.onclick = function() {
     let a = 3
     let b = 5
 
-    console.log(a+b)
-    console.log(a-b)
-    console.log(a*b)
-    console.log(a/b)
-    console.log(a%b)
+    document.writeln(a+b, '<br>')
+    document.writeln(a-b, '<br>')
+    document.writeln(a*b, '<br>')
+    document.writeln(a/b, '<br>')
+    document.writeln(a%b, '<br>')
 }
 
 perbandingan.onclick = function() {
     let a = 3
     let b = 5
 
-    console.log(a==b)
-    console.log(a<b)
-    console.log(a>b)
-    console.log(a!=b)
+    document.writeln(a==b, '<br>')
+    document.writeln(a<b, '<br>')
+    document.writeln(a>b, '<br>')
+    document.writeln(a!=b, '<br>')
 }
 
 logika.onclick = function() {
     let a = 3
     let b = 5
 
-    console.log(a&&b)
-    console.log(a||b);
-    console.log(!a);
+    document.writeln(a&&b, '<br>')
+    document.writeln(a||b, '<br>')
+    document.writeln(!a, '<br>')
 }
 
 bitwise.onclick = function() {
     let a = 3
     let b = 5
 
-    console.log(a&b);
-    console.log(a|b);
-    console.log(a^b);
-    console.log(~a);
+    document.writeln(a&b, '<br>')
+    document.writeln(a|b, '<br>')
+    document.writeln(a^b, '<br>')
+    document.writeln(~a, '<br>')
 }
 
 ternary.onclick = function() {
     let a = 3
     let b = 5
 
-    console.log(a==b ? 'sama' : 'tidak sama');
+    document.writeln(a==b ? 'sama' : 'tidak sama');
 }
 
 alertt.onclick = function() {
@@ -243,51 +244,41 @@ switchh.onclick = function() {
 
 forr.onclick = function() {
     for (let i = 1; i < 5; i++){
-        document.writeIn(i)
-        document.writeIn("<br>")
+        document.writeln(i, '<br>')
     }
 }
 
 whilee.onclick = function() {
     let b = 1
-    while (b<5) {
-        document.writeIn(b)
-        document.writeIn("<br>")
+    while (b < 5) {
+        document.writeln(b)
         b++
     }
 }
 
 doWhilee.onclick = function() {
-    let i = 1;
-    document.writeIn('Perulangan do while')
-    document.writeIn("<br>")
+    let i = 1
     do {
-        document.writeIn(i)
-        document.writeIn("<br>")
+        document.writeln(i)
         i++
-    } while (i<5);
+    } while (i < 5);
 }
 
 breakk.onclick = function() {
-    document.writeIn('Perulangan for')
-    document.writeIn("<br>")
-    for (let a = 1; a < 5; a++) {
-        if (a == 3){
+    for(let a = 1; a < 5; a++) {
+        if (a == 3) {
             break
         }
-        document.writeIn(a)
-        document.writeIn("<br>")
+        document.writeln(a)
     }
 }
 
+
 continuee.onclick = function() {
-    document.writeIn('Perulangan for')
-    document.writeIn("<br>")
-    for (let a = 1; a < 5; a++) {
-        if (a == 3){
+    for(let a = 1; a < 5; a++) {
+        if (a == 3) {
             continue
         }
-        document.writeIn(a)
-        document.writeIn("<br>")
+        document.writeln(a)
     }
 }
