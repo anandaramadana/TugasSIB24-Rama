@@ -10,7 +10,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: url(../img/background.jpg);
+    background-color: burlywood;
     background-size: cover;
 }
 
@@ -23,20 +23,39 @@ body {
     box-shadow: inset -2px 2px 2px white;
 }
 
-.container .content .materi {
-    margin-bottom: 10px;
+.form-submit-btn input,
+.form-cancel-btn input {
+    cursor: pointer;
 }
 
 .container .content .materi label {
     color: white;
 }
 
-button {
-    cursor: pointer;
+.container .content .materi .form-submit-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(63, 114, 76, 0.7);
+}
+
+.container .content .materi .form-submit-btn input:hover {
+    background: rgba(56, 204, 93, 0.7);
+    color: white;
+}
+
+.form-submit-btn a {
+    text-decoration: none;
 }
 
 .form-cancel-btn {
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .form-cancel-btn a {
