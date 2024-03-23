@@ -2,7 +2,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     background-color: black;
-    color: white;
+    color: black;
 }
 
 header {
@@ -16,6 +16,11 @@ header {
     align-items: center;
     position: relative;
     z-index: 100;
+}
+
+header .tugas a {
+    text-decoration: none;
+    color: black;
 }
 
 header .menu {
@@ -80,13 +85,13 @@ header .menu a {
 }
 
 .slider .list .item .content p a {
-    border: 2px solid white;
-    color: white;
+    border: 2px solid black;
+    color: black;
     font-weight: bold;
 }
 
 .slider .list .item .content h2 {
-    font-size: 100px;
+    font-size: 70px;
     margin: 0;
 }
 
