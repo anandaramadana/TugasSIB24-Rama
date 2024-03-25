@@ -1,4 +1,4 @@
-let endpoint = 'https://crudcrud.com/api/ca9475b8a02949968345497ad6bef7d0/product/';
+let endpoint = 'https://crudcrud.com/api/6396deafb31740a880d5d14cba36cf48/product/';
 
 // menampilkan data di tabel
 fetch(endpoint)
@@ -75,6 +75,7 @@ function edit_data(id_product) {
         document.getElementById("edit_jumlah").value = product.jumlah;
         document.getElementById("edit_harga").value = product.harga;
         document.getElementById("edit_keterangan").value = product.keterangan;
+        document.getElementById("edit_gambar").value = product.gambar;
     })
     .catch((error) => {
         console.log('Terjadi kesalahan:', error.message);
@@ -89,6 +90,7 @@ function update_data(event) {
     const input_jumlah = document.getElementById("edit_jumlah").value;
     const input_harga = document.getElementById("edit_harga").value;
     const input_keterangan = document.getElementById("edit_keterangan").value;
+    const input_gambar = document.getElementById("edit_gambar").value;
     const input_id_produk = document.getElementById("id_produk").value;
 
     fetch(`${endpoint}${input_id_produk}`, {
@@ -101,6 +103,7 @@ function update_data(event) {
             jumlah: input_jumlah,
             harga: input_harga,
             keterangan: input_keterangan,
+            gambar: input_gambar
         })
     })
     .then(response => {
