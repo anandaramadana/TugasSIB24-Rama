@@ -10,7 +10,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: burlywood;
+    background-color: #ffbd59;
     background-size: cover;
 }
 
@@ -217,7 +217,7 @@ body {
     color: white;
 }
 
-@media(max-width : 600px) {
+@media(max-width : 300px) {
     .container {
         min-width: 280px;
     }
