@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    background-color: burlywood;
+    background-color: #ffbd59;
 }
 
 .container {
@@ -144,10 +144,18 @@ body {
     .product-preview .preview {
         height: 30rem;
     }
+
+    .form-cancel-btn input {
+        width: 20%;
+    }
 }
 
 @media (max-width : 450px) {
     html {
         font-size: 50%;
+    }
+
+    .form-cancel-btn input {
+        width: 20%;
     }
 }
