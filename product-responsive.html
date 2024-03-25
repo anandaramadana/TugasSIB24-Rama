@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product-responsive.css">
+    <title>Tambah Produk</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="right-content">
+
+                <div class="tambah-data">
+                    <h1 class="form-title">Tambah Produk</h1>
+                    <form action="" onsubmit="tambah_data(event)">
+                        <div class="main-user-info">
+                            <div class="user-input-box">
+                                <label for="nama_produk">Nama Produk :</label> <br>
+                                <input type="text" name="nama_produk" id="nama_produk" placeholder="Nama Produk">
+                            </div>
+                            
+                            <div class="user-input-box">
+                                <label for="jumlah">Jumlah :</label> <br>
+                                <input type="text" name="jumlah" id="jumlah" placeholder="Jumlah">
+                            </div>
+            
+                            <div class="user-input-box">
+                                <label for="harga">Harga :</label> <br>
+                                <input type="text" name="harga" id="harga" placeholder="Harga">
+                            </div>  
+                            
+                            <div class="user-input-box">
+                                <label for="keterangan">Keterangan :</label> <br>
+                                <input type="text" name="keterangan" id="keterangan" placeholder="Keterangan">
+                            </div>
+
+                            <div class="user-input-box">
+                                <label for="gambar">Gambar :</label> <br>
+                                <input type="text" name="gambar" id="gambar" placeholder="URL Gambar">
+                            </div>
+                        </div>
+            
+                        <div class="form-submit-btn">
+                            <input type="submit" value="Tambah">
+                        </div>
+                    </form>
+                    <div class="form-cancel-btn">
+                        <a href="productarray.html"><input type="submit" value="Kembali"></a>
+                    </div>
+                </div>
+
+
+                <div class="edit-data">
+                    <h1 class="form-title3"> Edit Data Produk </h1>
+                    <form action="" onsubmit="update_data(event)">
+                        <div class="main-edit-info">
+                            <input type="hidden" id="id_produk">
+    
+                            <div class="user-edit-box">
+                                <label for="nama_produk"> Nama Produk :</label> <br>
+                                <input type="text" name="nama_produk" id="edit_nama_produk" required>
+                            </div>
+                            
+                            <div class="user-edit-box">
+                                <label for="jumlah"> Jumlah :</label> <br>
+                                <input type="number" name="jumlah" id="edit_jumlah" min="0" required> 
+                            </div>
+                            
+                            <div class="user-edit-box">
+                                <label for="harga"> Harga :</label> <br>
+                                <input type="number" name="harga" id="edit_harga" min="0" required>
+                            </div>
+    
+                            <div class="user-edit-box">
+                                <label for="harga"> Keterangan :</label> <br>
+                                <input type="text" name="keterangan" id="edit_keterangan" min="0" required>
+                            </div>
+
+                            <div class="user-edit-box">
+                                <label for="harga"> Gambar :</label> <br>
+                                <input type="text" name="gambar" id="edit_gambar" required>
+                            </div>
+                        </div>
+
+                        <div class="form-submit-btn">
+                            <input type="submit" value="Update" class="button-update">
+                        </div>
+                    </form>
+                    <div class="form-cancel-btn">
+                        <a href="productarray.html"><input type="submit" value="Kembali"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-konten">
+                <h1 class="form-title2">Data Produk</h1>
+                <div class="error"></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td> Nama Produk </td>
+                            <td> Jumlah </td>
+                            <td> Harga </td>
+                            <td> Keterangan </td>
+                            <td> Action </td>
+                        </tr>
+                    </thead>
+                    <tbody id="data_produk">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/product-responsive.js"></script>
+</html>
