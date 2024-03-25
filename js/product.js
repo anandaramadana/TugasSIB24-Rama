@@ -1,4 +1,4 @@
-let endpoint = 'https://crudcrud.com/api/ca9475b8a02949968345497ad6bef7d0/product/';
+let endpoint = 'https://crudcrud.com/api/6396deafb31740a880d5d14cba36cf48/product/';
 
 // menampilkan data di card
 fetch(endpoint)
